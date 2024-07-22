@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #fd7479;
+    transition: background-color 1s;
+
+}
+
+#page-container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #fd7479; */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#title-bar {
+    width: 100%;
+    height: 15vh;
+}
+
+#logo {
+    max-width: 150px;
+    padding: 10px 25px;
+}
+
+#page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 85vh;
+}
+
+.h1-text {
+    font-size: 3rem;
+}
+
+#copy-text {
+    width: 65%;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+textarea {
+    width: 100vh;
+    height: 25vh;
+    border-radius: 5px;
+    border: 5px solid #fff;
+    background-color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+    margin-top: -20px;
+}
+
+#bkg-colour-options {
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+}
+
+#start-btn, #next-btn {
+    margin-top: -50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #fd7479;
+    border-radius: 5px;
+    color: white;
+    border-color: white;
+}
+
+#next-btn {
+    display: none;
+}
+
+#start-btn:hover {
+    background-color: #8e3f42;
+}
+
+#bkg-colour-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.dot {
+    min-height: 25px;
+    min-width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+.purple {
+    background-color: rgb(193, 135, 220);
+}
+
+.blue {
+    background-color: rgb(137, 222, 241);
+}
+
+.orange {
+    background-color: #ED8877;
+}
+
+.pink {
+    background-color: #fd7479;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+#timer {
+    font-size: 1.75rem;
+    margin-top: -50px;
+    display: none;
+}
